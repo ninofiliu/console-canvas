@@ -19,6 +19,10 @@ module.exports = class ConsoleCanvas {
         }
     }
 
+    drawPoint(x, y, bgColor) {
+        this.screen[y][x].setBgColor(bgColor);
+    }
+
     finish() {
         for (let i = 0; i < this.height; i++) {
             process.stdout.write('\n');
