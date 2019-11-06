@@ -14,7 +14,7 @@ module.exports = class ConsoleCanvas {
     print() {
         for (const line of this.screen) {
             for (const pixel of line) {
-                process.stdout.write(pixel.letter);
+                process.stdout.write(pixel.value);
             }
             process.stdout.write('\n');
         }
