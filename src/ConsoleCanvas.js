@@ -22,4 +22,10 @@ module.exports = class ConsoleCanvas {
             process.stdout.write('\x1b[F');
         }
     }
+
+    finish() {
+        for (let i = 0; i < this.height; i++) {
+            process.stdout.write('\n');
+        }
+    }
 };
