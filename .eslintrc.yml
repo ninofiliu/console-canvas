@@ -11,3 +11,7 @@ rules:
   indent:
     - error
     - 4
+  no-restricted-syntax:
+    - off
+  no-plusplus:
+    - off

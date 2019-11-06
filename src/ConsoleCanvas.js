@@ -10,4 +10,16 @@ module.exports = class ConsoleCanvas {
             ))
         ));
     }
+
+    print() {
+        for (const line of this.screen) {
+            for (const pixel of line) {
+                process.stdout.write(pixel.letter);
+            }
+            process.stdout.write('\n');
+        }
+        for (let i = 0; i < this.height; i++) {
+            process.stdout.write('\x1b[F');
+        }
+    }
 };
