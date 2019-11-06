@@ -1,0 +1,13 @@
+env:
+  commonjs: true
+  es6: true
+  node: true
+extends:
+  - airbnb-base
+globals: {}
+parserOptions:
+  ecmaVersion: 2018
+rules:
+  indent:
+    - error
+    - 4
