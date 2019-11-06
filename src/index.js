@@ -1,1 +1,5 @@
-module.exports = {};
+const ConsoleCanvas = require('./ConsoleCanvas');
+
+module.exports = {
+    ConsoleCanvas,
+};
