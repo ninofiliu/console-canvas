@@ -1,0 +1,6 @@
+{
+    "version": "0.0.0",
+    "name": "console-canvas",
+    "description": "Draw colorful geometric shapes in the console",
+    "main": "src/index.js"
+}
