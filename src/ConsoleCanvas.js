@@ -68,4 +68,13 @@ module.exports = class ConsoleCanvas {
             }
         }
     }
+
+    // write methods
+
+    write(x, y, text, fgColor) {
+        text.split('').forEach((letter, i) => {
+            this.screen[y][x + i].setFgColor(fgColor);
+            this.screen[y][x + i].setLetter(letter);
+        });
+    }
 };
