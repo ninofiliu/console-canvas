@@ -4,14 +4,10 @@ env:
   node: true
 extends:
   - airbnb-base
-globals: {}
 parserOptions:
   ecmaVersion: 2018
 rules:
-  indent:
-    - error
-    - 4
-  no-restricted-syntax:
-    - off
-  no-plusplus:
-    - off
+  indent: [ error, 4 ]
+  no-restricted-syntax: off
+  no-plusplus: off
+  no-use-before-define: [ error, { functions: true }]
