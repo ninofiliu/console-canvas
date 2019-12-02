@@ -31,6 +31,14 @@ module.exports = class ConsoleCanvas {
         }
     }
 
+    reset() {
+        for (const line of this.screen) {
+            for (const pixel of line) {
+                pixel.reset();
+            }
+        }
+    }
+
     // draw methods
 
     drawPoint(x, y, bgColor) {

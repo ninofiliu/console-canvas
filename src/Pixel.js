@@ -2,11 +2,14 @@ const colors = require('./colors');
 
 module.exports = class Pixel {
     constructor() {
+        this.reset();
+    }
+
+    reset() {
         this.letter = ' ';
         this.fgColor = '';
         this.bgColor = '';
         this.value = null;
-
         this.setValue();
     }
 
